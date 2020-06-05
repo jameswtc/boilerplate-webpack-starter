@@ -56,6 +56,11 @@ module.exports = {
             }
         ],
     },
+    resolve: {
+        alias: {
+            "~": path.resolve(__dirname, 'node_modules'),
+        }
+    },
     plugins: [
         new CleanWebpackPlugin({
             cleanStaleWebpackAssets: false
@@ -64,6 +69,7 @@ module.exports = {
             template: "./src/index.html",
             filename: "index.html"
         }),
+        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
     ]
 };
