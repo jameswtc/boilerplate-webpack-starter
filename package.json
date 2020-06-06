@@ -43,6 +43,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "fast-async": "^6.3.8",
+    "fast-async": "^6.3.8"
   }
 }
